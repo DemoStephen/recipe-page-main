@@ -1,0 +1,129 @@
+/* Fonts Used In The Project */
+@font-face {
+    font-family: 'Outfit';
+    src: url('./assets/fonts/outfit/Outfit-VariableFont_wght.ttf');
+}
+@font-face {
+    font-family: 'Young Serif';
+    src: url('./assets/fonts/young-serif/YoungSerif-Regular.ttf');
+}
+/* Removed Default Style With Universal Selector */
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit';
+    box-sizing: border-box;
+}
+/* Created Variable */
+:root{
+    --eggshell: hsl(30, 54%, 90%);
+    --roseWhite: hsl(330, 100%, 98%);
+    --wengeBrown: hsl(30, 10%, 34%);
+    --darkCharcoal: hsl(24, 5%, 18%);
+    --preparation: hsla(332, 51%, 32%, 0.034);
+    --Nutmeg: hsl(14, 45%, 36%);
+    --darkRaspberry: hsl(332, 51%, 32%);
+    --white: hsl(0, 0%, 100%);
+    --lightGrey: hsl(30, 18%, 87%);
+}
+
+body{
+    font-size: 16px;
+    padding: 3rem 0;
+    background-color: var(--eggshell);
+    color: var(--wengeBrown);
+}
+main{
+    width: clamp(40vw, calc(100% - 40px), 45vw);
+    margin: 0 auto;
+    background-color: var(--roseWhite);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+/* Header */
+header{
+    margin: 0 0 1rem 0;
+}
+header img{
+    width: 100%;
+    border-radius: 1rem;
+}
+header h1{
+    color: var(--darkCharcoal);
+    font-family: 'Young Serif';
+    margin: 1rem 0;
+}
+/* Preparation */
+.preparation{
+    background-color: var(--preparation);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    margin: 0 0 1rem 0;
+}
+.preparation h3{
+    color: var(--darkRaspberry);
+    font-family: 'Outfit';
+}
+.preparation ul li::marker{
+    color: var(--darkRaspberry);
+}
+/* Preparation End*/
+li::marker{
+    color: var(--Nutmeg);
+    font-weight: 700;
+}
+li+li{
+    margin: 0.3rem 0 0 0;
+}
+ul,ol{
+    margin: 0 0 0 1.5rem;
+}
+h2,h3{
+    margin: 0 0 0.5rem 0;
+    color: var(--Nutmeg);
+    font-family: 'Young Serif';
+    font-weight: 500;
+}
+hr{
+    margin: 1.5rem 0 1rem 0;
+    border: 1px solid var(--lightGrey);
+}
+table{
+    margin: 1rem 0 0 0;
+    width: 100%;
+}
+th,td{
+    border-bottom: 1px solid var(--lightGrey);
+    text-align: start;
+    padding: .45rem;
+}
+th{
+    font-weight: 400;
+}
+td{
+    color: var(--Nutmeg)
+}
+.attribution { font-size: 11px; text-align: center; margin: 1rem 0;}
+.attribution a { color: hsl(228, 45%, 44%); }
+/*Mobile Responsive */
+@media (max-width: 950px){
+    body{
+        padding: 0;
+    }
+    main{
+        width: 100%;
+        border-radius: unset;
+        padding: 0rem;
+    }
+    header img{
+        border-radius: unset;
+    }
+    section, header h1, header p{
+        padding: 0 1rem;
+    }
+    .attribution{
+        margin: 0;
+        padding: 1rem 0 2rem 0;
+        background-color: var(--roseWhite);
+    }
+}
