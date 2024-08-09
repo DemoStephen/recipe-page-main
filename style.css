@@ -75,7 +75,11 @@ li+li{
     margin: 0.3rem 0 0 0;
 }
 ul,ol{
-    margin: 0 0 0 1.5rem;
+    list-style-position: inside;
+}
+ol li, ul li{
+    padding:  0 0 0 1em;
+    text-indent: -1em;
 }
 h2,h3{
     margin: 0 0 0.5rem 0;
@@ -91,10 +95,16 @@ table{
     margin: 1rem 0 0 0;
     width: 100%;
 }
+tr{
+    margin: 0;
+    display: flex;
+}
 th,td{
-    border-bottom: 1px solid var(--lightGrey);
     text-align: start;
     padding: .45rem;
+    border-bottom: 1px solid var(--lightGrey);
+    display: block;
+    width: 50%;
 }
 th{
     font-weight: 400;
