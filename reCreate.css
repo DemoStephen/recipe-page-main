@@ -1,0 +1,107 @@
+@font-face {
+    font-family: 'Outfit';
+    src: url('./assets/fonts/outfit/Outfit-VariableFont_wght.ttf') format(truetype);
+}
+@font-face {
+    font-family: 'youngSerif';
+    src: url('./assets/fonts/young-serif/YoungSerif-Regular.ttf') format(truetype);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+:root{
+    --roseWhite: hsl(330, 100%, 98%);
+    --wengeBrown: ;
+    --darkCharcoal: hsl(24, 5%, 18%);
+
+    --lightGrey: ;
+}
+body{
+    background-color: hsl(30, 54%, 90%);
+    font-size: 1rem;
+    color: hsl(30, 10%, 34%);
+}
+main{
+    background-color: hsl(0, 0%, 100%);
+    width: clamp(45rem, calc(100% - 40px), 50rem);
+    margin: 4rem auto;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+/* Header styling Start */
+header img{
+    width: 100%;
+    border-radius: 1rem;
+}
+header h1{
+    margin: 1rem 0;
+    color: black;
+}
+
+header p{
+    margin: 0 0 1rem 0;
+}
+
+
+/* Pinkish section styling Start */
+#pinkishBg{
+    padding: 1rem;
+    background-color: hsl(330, 100%, 98%);
+    border-radius: 1rem;
+    margin: 2rem 0;
+}
+#pinkishBg h3{
+    margin: 0 0 1rem 0;
+    color: hsl(332, 51%, 32%);
+}
+ul, ol{
+    list-style-position: inside;
+}
+hr{
+    margin: 2rem 0;
+}
+li{
+    margin: .35rem 0;
+}
+li::marker{
+    color: hsl(14, 45%, 36%);;
+}
+ol li::marker{
+    font-weight: 800;
+}
+ol li{
+    text-indent: -1em;
+    padding: 0 0 0 1em;
+}
+h1, h2, h3{
+    font-family: 'youngSerif', serif;
+    color:hsl(14, 45%, 36%)
+}
+.tableParagraph{
+    margin: .5rem 0 0 0;
+}
+table{
+    width: 100%;
+    margin: 1rem 0;
+}
+tr{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .45rem 0;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+th, td{
+    text-align: start;
+    width: 100%;
+}
+td b{
+    color: hsl(14, 45%, 36%);
+}
+#lastContent{
+    border-bottom: unset;
+
+}
